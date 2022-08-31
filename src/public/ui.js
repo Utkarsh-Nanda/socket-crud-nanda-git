@@ -24,7 +24,7 @@ const noteUI = (note) => {
   const btnUpdate = div.querySelector(".update");
 
   btnDelete.addEventListener("click", () => deleteNote(btnDelete.dataset.id));
-  btnUpdate.addEventListener("click", () => getNoteById(btnDelete.dataset.id));
+  btnUpdate.addEventListener("click", () => getNoteById(btnUpdate.dataset.id));
 
   return div;
 };
